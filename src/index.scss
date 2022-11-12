@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+.wrapper{
+  max-width: 1230px;
+  margin: 0 auto;
+  background:#FFFFFF ;
+  &--slider{
+    height: 580px;
+  }
+  &--fond{
+    max-width: 1135px;
+  }
+}
+.d-flex{
+  display: flex;
+}
+.column{
+  flex-direction: column;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.leftFooter{
+  text-align: left;
+}
+.align-left{
+  align-items: left;
+}
+.align-right{
+  align-items: right;
+}
+.align-center{
+  align-items: center;
+}
+.mt-100{
+  margin-top: 100px;
+}
+.mt-60{
+  margin-top: 60px;
+}
+.mt-40{
+  margin-top: 40px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mr-60{
+  margin-right: 60px;
+}
+.mr-40{
+  margin-right: 40px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+.mw-600{
+  max-width: 600px;
+}
+.come{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  text-decoration-line: underline;
+  color: #333333;
+
+
+}
+.pinkBotton{
+  width: 240px;
+  height: 60px;
+  background: #FF496A;
+  border-radius: 15px;
+  color: #FFFFFF;
+  border-style: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.myH1{
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 51px;
+  color: #333333;
+  margin: 0;
+  &--fonds{
+    text-align: left;
+  }
+}
+.myH2{
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  color: #333333;
+  max-width: 850px;
+  margin-top: 80px;
+  text-align: left;
+}
+.textIn{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: left;
+  padding-top: 200px;
+  padding-left: 40px;
+  
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.card{
+  width: 600px;
+  height: 300px;
+  border-radius: 15px;
+  &--small{
+    width: 390px;
+    
+  &--one{
+    background-image: url(/img/proj1.png);
+    background-repeat: no-repeat;
+  }
+  &--two{
+    background-image: url(/img/prog2.png);
+    background-repeat: no-repeat;
+
+  }
+  &--three{
+    background-image: url(/img/proj3.png);
+    background-repeat: no-repeat;
+  }
+}
+  
+  :hover{
+    background: #FF496A;
+    opacity: 0.6;
+    transition: all .38s ease-in-out;
+    margin: 0;
+    display: block;
+  }
+
+
+}
+.greyText{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
+  margin-top: 50px;
+  text-align: left;
+  &--puncts{
+    margin-top: 20px;
+  }
+}
+li::marker{
+  color:#FF496A;
+}
+.whiteText{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0;
+  &--bold{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+footer{
+  background-image: url("/img/footer.png");
+}
+.footWrap{
+  max-width: 1230px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 150px;
+}
+.number{
+  text-align: right;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+.prava{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #999999;
+  margin-top: 80px;
+}
+.hover-effect-btn {
+  position: relative;
+
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.5); /* Настройка цвета и прозрачности для блока с заголовком */
+  transition: background 0.5s ease;
+  &--small{
+    height: 85%;
+  }
+  
+}
+.hover-effect-btn:hover .overlay {
+  display: block;
+  background: rgba(255, 73, 106, 0.61);; /* Настройка цвета и прозрачности для блока с заголовком при наведении */
+}
+.title {
+  position: absolute;
+  left: 0;
+  top: 75%; /* Отступ сверху */
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  z-index: 1;
+  transition: top .5s ease;
+  margin-left: 40px;
+  &--proj{
+    top: 5%;
+  }
+}
+
+.hover-effect-btn:hover .title {
+  top: 20%; /* Отступ сверху при наведении */
+}
+.hover-effect-btn:hover .sum {
+  opacity: 0;
+}
+.button {
+  position: absolute;
+  width: 100%;
+  left:0;
+  top: 65%; /* Отступ сверху */
+  text-align: left;
+  opacity: 0;
+  transition: opacity .35s ease;
+  margin-left: 40px;
+}
+.button a {
+  padding: 20px 60px; /* Отступ */
+  text-align: center;
+  border-radius: 15px;
+  background: rgba(255, 73, 106, 0.9); /* Цвет кнопки */
+  color: white; /* Цвет текста */
+  border: 1px solid white; /* Ширина, стиль и цвет границы */
+  z-index: 1; 
+}
+.hover-effect-btn:hover .button {
+  opacity: 1;
+}
+.cardText{
+  opacity: 0;
+}
+.hover-effect-btn:hover .cardText {
+  opacity: 1;
+}
+.cardText{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+.lin{
+  width: 118px;
+  height: 0px;
+  border: 1px solid #FFFFFF;
+  margin-top: 20px;
+}
